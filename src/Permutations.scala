@@ -15,7 +15,7 @@ object Permutations extends App{
 
     for(i <- 0 until remaining.length) {
 
-      val c = remaining.charAt(i);
+      val c = remaining.charAt(i)
 
       permute(removeChar(remaining, c), sofar + c)
     }
